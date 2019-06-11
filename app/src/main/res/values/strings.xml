@@ -1,0 +1,43 @@
+<resources>
+  <string name="lorem_time" translatable="false">00:00</string>
+  <string name="lorem_triple" translatable="false">XXX</string>
+  <string name="lorem_numbers" translatable="false">123&#x200A;450,&#x200A;07</string>
+  <string name="sign_percent" translatable="false">&#160;%</string>
+  <string name="sign_short_space" translatable="false">&#x200A;</string>
+  <string name="lorem_title" translatable="false">Lorem ipsum</string>
+  <string name="lorem_short" translatable="false">
+    Lorem ipsum dolor sit amet
+  </string>
+  <string translatable="false" name="space">&#160;</string>
+  <string name="lorem" translatable="false">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam assumenda exercitationem illum magni
+    odio quos rerum, sapiente tempora ullam. Delectus explicabo, iusto laudantium minima odio quae unde velit
+    voluptate.
+    Amet aspernatur debitis, deleniti distinctio ea eligendi ex expedita facere illo iste itaque odio repellat
+    repudiandae sed sequi soluta unde voluptatem? Amet esse eveniet iure magnam non qui sint sit?
+
+    Eligendi illo ipsa saepe soluta totam? Beatae cum iste iusto provident, rerum unde. Accusantium architecto,
+    atque aut corporis cumque, distinctio dolorum magnam modi nam odit perspiciatis quam sit temporibus ullam.
+
+    Asperiores, consequatur dolore dolorem dolorum explicabo harum modi nemo quia suscipit! Alias amet
+    consectetur debitis deleniti distinctio dolores, ducimus eius eos necessitatibus, non, porro praesentium
+    sequi suscipit. Delectus minima, velit!
+  </string>
+  <string name="app_name">Tradernet</string>
+  <string name="no_internet_connection">No internet connection</string>
+  <string name="authorization">Authorization</string>
+  <string name="auth_error">Authorization error</string>
+  <string name="attention">Attention</string>
+  <string name="password">Password</string>
+  <string name="enter_your_email">ENTER YOUR EMAIL</string>
+  <string name="enter_password">ENTER PASSWORD</string>
+  <string name="sign_in">Sign in</string>
+  <string name="sign_out">Sign out</string>
+  <string name="page_cant_display">Page cant display</string>
+  <string name="downloading">Downloading</string>
+  <string name="blankScreen">Blank screen</string>
+  <string name="sign_up">Sign up</string>
+
+  <string name="quotes">Quotes</string>
+  <string name="settings">Settings</string>
+</resources>

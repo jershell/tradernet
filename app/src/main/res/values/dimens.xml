@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="topNavBar">56dp</dimen>
+  <dimen name="iconSize">56dp</dimen>
+  <dimen name="iconButtonSize">22dp</dimen>
+  <dimen name="list_item_height">72dp</dimen>
+  <dimen name="collapsible_htoolbar">145dp</dimen>
+  <dimen name="collapsible_htoolbar_with_image">201dp</dimen>
+  <dimen name="s_padding">8dp</dimen>
+  <dimen name="m_padding">16dp</dimen>
+  <dimen name="l_padding">24dp</dimen>
+</resources>

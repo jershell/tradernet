@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2196f3</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="primary_button">#2196f3</color>
+    <color name="ripple">#D367B6F3</color>
+    <color name="disabled_color_button">#ADCBE4</color>
+    <color name="disabled_text_color_button">#d8dfe3</color>
+    <color name="background_light">#f6f7f8</color>
+    <color name="background_dark">#263238</color>
+    <color name="dark_text">#252d32</color>
+    <color name="text_dark">#252d32</color>
+    <color name="text_light">#778c9b</color>
+    <color name="description_text">#80252D32</color>
+    <color name="danger_text">#e53935</color>
+    <color name="text_success">#8bc34a</color>
+    <color name="text_fail">#f44336</color>
+    <color name="white">@android:color/white</color>
+    <color name="transparent">@android:color/transparent</color>
+</resources>

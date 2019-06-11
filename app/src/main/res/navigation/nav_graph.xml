@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/nav_graph"
+            app:startDestination="@id/nav_splash_screen">
+
+  <fragment
+    android:id="@+id/nav_splash_screen"
+    android:name="ru.tradernet.presentation.screens.FragmentSplashScreen"
+    android:label="FragmentSplashScreen"
+    tools:layout="@layout/fragment_splash_screen"
+  >
+    <action android:id="@+id/action_nav_splash_screen_to_nav_sing_in" app:destination="@id/nav_sing_in"/>
+    <action android:id="@+id/action_nav_splash_screen_to_nav_main_screen" app:destination="@id/nav_main_screen"/>
+  </fragment>
+
+  <fragment
+    android:id="@+id/nav_sing_in"
+    android:name="ru.tradernet.presentation.screens.FragmentSignInScreen"
+    android:label="FragmentSignInScreen"
+    tools:layout="@layout/fragment_sign_in_screen"
+  >
+    <action
+      app:enterAnim="@anim/slide_left"
+      android:id="@+id/action_nav_sing_in_to_nav_sign_up"
+      app:destination="@id/nav_sign_up"
+    />
+    <action
+      app:enterAnim="@anim/slide_left"
+      android:id="@+id/action_nav_sing_in_to_nav_main_screen"
+      app:destination="@id/nav_main_screen"
+    />
+  </fragment>
+
+  <fragment
+    android:id="@+id/nav_sign_up"
+    android:name="ru.tradernet.presentation.screens.FragmentSignUpScreen"
+    android:label="FragmentSignUpScreen"
+    tools:layout="@layout/fragment_sign_up_screen"
+  />
+
+  <fragment
+    android:id="@+id/nav_main_screen"
+    android:name="ru.tradernet.presentation.screens.FragmentMainScreen"
+    android:label="FragmentMainScreen"
+    tools:layout="@layout/fragment_tab_quotes"
+  />
+
+  <action
+    android:id="@+id/action_home"
+    app:destination="@id/nav_main_screen"
+    app:enterAnim="@android:anim/fade_in"
+    app:launchSingleTop="true"
+    app:popUpTo="@id/nav_graph"
+    app:popUpToInclusive="true"
+  />
+
+  <action
+    android:id="@+id/action_sing_in"
+    app:destination="@id/nav_sing_in"
+    app:enterAnim="@android:anim/fade_in"
+    app:launchSingleTop="true"
+    app:popUpTo="@id/nav_graph"
+    app:popUpToInclusive="true"
+  />
+</navigation>

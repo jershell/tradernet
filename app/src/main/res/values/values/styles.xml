@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <!-- Base application theme. -->
+  <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorBTN</item>
+    <item name="colorAccent">@color/colorBTN</item>
+    <item name="colorError">@color/colorSupport2</item>
+  </style>
+
+  <style name="app_bar">
+    <item name="android:fitsSystemWindows">false</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:background">@android:color/white</item>
+  </style>
+
+
+  <style name="toolbar" parent="@style/navigateTitle">
+    <item name="titleMarginStart">4dp</item>
+    <!--<item name="android:layout_marginBottom">4dp</item>-->
+    <item name="android:layout_height">?attr/actionBarSize</item>
+    <item name="android:layout_width">match_parent</item>
+  </style>
+
+  <style name="toolbar_transparent" parent="@style/navigateTitle">
+    <item name="titleMarginStart">4dp</item>
+    <item name="android:layout_height">?attr/actionBarSize</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:background">@android:color/transparent</item>
+    <item name="elevation">0dp</item>
+  </style>
+
+
+  <style name="footer" parent="@style/navigateTitle">
+    <item name="android:background">@drawable/toolbar_dropshadow</item>
+  </style>
+
+  <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+  <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+  <style name="title">
+    <item name="android:textColor">@color/colorTXT</item>
+    <item name="android:textSize">16sp</item>
+  </style>
+
+  <style name="month">
+    <item name="android:textAlignment">center</item>
+    <item name="android:textSize">
+      19sp
+    </item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textColor">
+      @color/colorTXT
+    </item>
+  </style>
+
+  <style name="description">
+    <item name="android:textColor">@color/colorDescription</item>
+    <item name="android:textSize">14sp</item>
+  </style>
+
+
+  <style name="AlertDialog" parent="Theme.AppCompat.Dialog.Alert">
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:padding">8dp</item>
+
+    <!-- Set this to true if you want Full Screen without status bar -->
+    <item name="android:windowFullscreen">false</item>
+    <item name="android:windowIsFloating">true</item>
+
+    <!-- This is important! Don't forget to set window background -->
+    <item name="android:windowBackground">@android:color/transparent</item>
+
+    <!-- Additionally if you want animations when dialog opening -->
+    <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+    <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+  </style>
+
+  <style name="alertTitle">
+    <item name="layout_flexShrink">0</item>
+    <item name="android:textAlignment">textStart</item>
+    <item name="android:textSize">18sp</item>
+    <item name="android:padding">16dp</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textColor">@color/colorTXT</item>
+  </style>
+
+  <style name="alertDescription">
+    <item name="layout_flexShrink">0</item>
+    <item name="android:textAlignment">textStart</item>
+    <item name="android:textSize">16sp</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textColor">@color/colorDescription</item>
+  </style>
+
+  <style name="FullScreenDialog" parent="Theme.AppCompat.Dialog">
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:padding">12dp</item>
+
+    <!-- Set this to true if you want Full Screen without status bar -->
+    <item name="android:windowFullscreen">false</item>
+    <item name="android:windowIsFloating">false</item>
+
+    <!-- This is important! Don't forget to set window background -->
+    <item name="android:windowBackground">@android:color/white</item>
+
+    <!-- Additionally if you want animations when dialog opening -->
+    <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+    <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+  </style>
+
+  <style name="ProgressBarDialog" parent="Theme.AppCompat.Dialog">
+
+    <item name="colorAccent">@color/colorBTN</item> <!-- Whatever color you want-->
+    <item name="colorPrimaryDark">@color/colorBTN</item> <!-- Whatever color you want-->
+
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:padding">0dp</item>
+
+    <!-- Set this to true if you want Full Screen without status bar -->
+    <item name="android:windowFullscreen">false</item>
+    <item name="android:windowIsFloating">false</item>
+
+    <!-- This is important! Don't forget to set window background -->
+    <item name="android:windowBackground">@color/mask_white</item>
+
+    <!-- Additionally if you want animations when dialog opening -->
+    <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+    <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+  </style>
+
+  <style name="input" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorControlNormal">@color/colorDescription</item>
+    <item name="colorControlActivated">@color/colorBTN</item>
+    <!--<item name="colorControlHighlight">@color/accent</item>-->
+  </style>
+
+  <style name="navigateTitle" parent="Theme.AppCompat">
+    <item name="android:textAlignment">textStart</item>
+    <item name="android:textSize">18sp</item>
+    <item name="android:textColor">@color/colorTXT</item>
+  </style>
+
+  <style name="dialogPoster">
+    <item name="layout_flexShrink">2</item>
+  </style>
+
+  <style name="dialogTitle">
+    <item name="layout_flexShrink">0</item>
+    <item name="android:textAlignment">center</item>
+    <item name="android:textSize">22sp</item>
+    <item name="android:padding">16dp</item>
+    <item name="android:textColor">@color/colorTXT</item>
+  </style>
+
+  <style name="dialogDescription">
+    <item name="layout_flexShrink">0</item>
+    <item name="android:textAlignment">center</item>
+    <item name="android:textSize">16sp</item>
+    <item name="android:textColor">@color/colorDescription</item>
+    <item name="android:paddingBottom">16dp</item>
+    <item name="android:paddingTop">8dp</item>
+  </style>
+
+  <style name="container">
+    <item name="android:background">@color/colorBackground</item>
+  </style>
+
+  <style name="dialogWrapper">
+    <item name="android:layout_margin">24dp</item>
+  </style>
+
+  <style name="primaryFButton">
+    <item name="fb_iconPosition">left</item>
+    <item name="fb_defaultColor">@color/colorBTN</item>
+    <item name="fb_textColor">@android:color/white</item>
+    <item name="fb_radius">4dp</item>
+    <item name="android:textStyle">bold</item>
+    <item name="fb_textSize">14sp</item>
+    <item name="fb_textGravity">center</item>
+    <item name="fb_disabledColor">@color/colorBTN_DISABLED</item>
+    <item name="fb_disabledTextColor">@color/colorPrimary</item>
+    <item name="android:textAlignment">center</item>
+    <item name="android:paddingBottom">12dp</item>
+    <item name="android:paddingTop">12dp</item>
+    <item name="android:textAllCaps">true</item>
+  </style>
+
+  <style name="secondaryFButton">
+    <item name="fb_defaultColor">@android:color/white</item>
+    <item name="fb_textColor">@color/colorBTN</item>
+    <item name="fb_radius">4dp</item>
+
+    <item name="android:paddingBottom">12dp</item>
+    <item name="android:paddingTop">12dp</item>
+
+    <item name="android:textStyle">bold</item>
+    <item name="fb_textSize">14sp</item>
+    <item name="fb_textGravity">center</item>
+    <item name="fb_borderWidth">1dp</item>
+    <item name="fb_borderColor">@color/colorBTN</item>
+    <item name="android:textAllCaps">true</item>
+  </style>
+
+
+  <style name="primaryButton">
+    <item name="android:textAllCaps">true</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textSize">14sp</item>
+    <item name="android:padding">16dp</item>
+    <item name="android:textAlignment">center</item>
+    <item name="android:textColor">@android:color/white</item>
+    <item name="android:background">@drawable/btn</item>
+  </style>
+
+  <style name="whiteButton">
+    <item name="android:textAllCaps">true</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textSize">14sp</item>
+    <item name="android:padding">16dp</item>
+    <item name="android:textAlignment">center</item>
+    <item name="android:textColor">@color/colorBTN</item>
+    <item name="android:background">@android:color/white</item>
+  </style>
+
+  <style name="secondaryButton">
+    <item name="android:textAllCaps">true</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textSize">14sp</item>
+    <item name="android:padding">16dp</item>
+    <item name="android:textAlignment">center</item>
+    <item name="android:textColor">@color/colorBTN</item>
+    <item name="android:background">@drawable/second_btn</item>
+  </style>
+
+  <style name="rippleButton">
+    <item name="mrl_rippleColor">@color/colorBTN_Ripple</item>
+    <item name="mrl_rippleBackground">@android:color/transparent</item>
+    <item name="android:padding">0dp</item>
+    <item name="mrl_rippleOverlay">true</item>
+  </style>
+
+  <style name="rippleListItem">
+    <item name="mrl_rippleColor">@color/colorUI4</item>
+    <item name="mrl_rippleBackground">@android:color/transparent</item>
+    <item name="android:padding">0dp</item>
+    <item name="mrl_rippleOverlay">true</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+  </style>
+
+  <style name="IconButton">
+    <item name="android:layout_width">@dimen/iconButtonSize</item>
+    <item name="android:layout_height">@dimen/iconButtonSize</item>
+    <item name="android:padding">8dp</item>
+  </style>
+
+  <style name="linkButton">
+    <item name="android:textSize">16sp</item>
+    <item name="android:padding">4dp</item>
+    <item name="android:textAlignment">center</item>
+    <item name="android:inputType">textCapSentences</item>
+    <item name="android:textColor">@color/colorBTN</item>
+    <item name="android:background">@android:color/transparent</item>
+  </style>
+
+  <style name="icon">
+    <item name="android:layout_width">@dimen/iconButtonSize</item>
+    <item name="android:layout_height">@dimen/iconButtonSize</item>
+    <item name="android:src">@drawable/ic_settings_dark</item>
+  </style>
+
+  <style name="horizontalLayout">
+    <item name="android:paddingTop">16dp</item>
+    <item name="android:paddingBottom">16dp</item>
+    <item name="android:paddingLeft">24dp</item>
+    <item name="android:paddingRight">24dp</item>
+
+    <item name="android:orientation">horizontal</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">@dimen/topNavBar</item>
+  </style>
+
+  <style name="li">
+    <item name="android:orientation">horizontal</item>
+    <item name="android:background">@drawable/selectable</item>
+    <item name="android:padding">16dp</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+  </style>
+
+  <style name="line">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">1dp</item>
+    <item name="android:background">@color/colorUI4</item>
+  </style>
+
+  <style name="divider">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">1dp</item>
+    <item name="android:background">@color/colorUI4</item>
+    <item name="android:layout_marginLeft">52dp</item>
+  </style>
+
+  <style name="vfsLayout">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:orientation">vertical</item>
+  </style>
+
+  <!--CALENDAR-->
+  <style name="MaterialCalendarView">
+    <item name="android:textSize">16sp</item>
+    <item name="android:textColor">@drawable/calendar_text_color</item>
+    <item name="android:background">@drawable/calendar_text_bg</item>
+  </style>
+
+  <!--Error label text style-->
+  <style name="MyErrorText" parent="TextAppearance.AppCompat.Small">
+    <item name="android:textColor">@color/colorSupport2</item>
+  </style>
+
+  <!--Input field style-->
+  <style name="MyEditText" parent="Theme.AppCompat.Light">
+    <item name="colorControlNormal">@color/colorTXT</item>
+    <item name="colorControlActivated">@color/colorDescription</item>
+  </style>
+
+  <!--Reports-->
+  <style name="reportTitle">
+    <item name="android:textSize">14sp</item>
+    <item name="android:textColor">@color/colorTXT</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="reportEspecialTitle">
+    <item name="android:textSize">16sp</item>
+    <item name="android:textColor">@color/colorTXT</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+
+  <style name="reportText">
+    <item name="android:textSize">14sp</item>
+    <item name="android:textColor">@color/colorTXT</item>
+  </style>
+
+  <style name="reportAltText">
+    <item name="android:textSize">12sp</item>
+    <item name="android:textColor">@color/colorTXT</item>
+  </style>
+
+  <style name="reportContentDivider">
+    <item name="android:background">@drawable/report_value_divider</item>
+  </style>
+
+  <style name="reportContentText">
+    <item name="android:textSize">16sp</item>
+    <item name="android:textColor">@color/colorDescription</item>
+  </style>
+
+  <style name="reportContentSmallText">
+    <item name="android:textSize">12sp</item>
+    <item name="android:textColor">@color/colorTXT</item>
+  </style>
+
+  <style name="reportValueText">
+    <item name="android:textSize">14sp</item>
+    <item name="android:textColor">@color/colorDescription</item>
+    <item name="android:fontFamily">@font/roboto_mono</item>
+  </style>
+
+  <style name="reportValueBigText">
+    <item name="android:textSize">16sp</item>
+    <item name="android:textColor">@color/colorDescription</item>
+    <item name="android:fontFamily">@font/roboto_mono</item>
+  </style>
+
+  <style name="reportValueSmallText">
+    <item name="android:textSize">12sp</item>
+    <item name="android:textColor">@color/colorDescription</item>
+    <item name="android:fontFamily">@font/roboto_mono</item>
+  </style>
+
+  <style name="reportValueBoldText">
+    <item name="android:textSize">16sp</item>
+    <item name="android:textColor">@color/colorTXT</item>
+    <item name="android:fontFamily">@font/roboto_mono_bold</item>
+  </style>
+
+  <style name="footer__title">
+    <item name="android:textColor">@color/colorDescription</item>
+    <item name="android:textSize">12sp</item>
+  </style>
+
+  <style name="whiteListItem">
+    <item name="android:background">@android:color/white</item>
+  </style>
+
+  <style name="footer__value">
+    <item name="android:textColor">@color/colorTXT</item>
+    <item name="android:textSize">20sp</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="footer_wrapper">
+    <item name="android:paddingTop">12dp</item>
+    <item name="android:paddingBottom">12dp</item>
+  </style>
+
+</resources>

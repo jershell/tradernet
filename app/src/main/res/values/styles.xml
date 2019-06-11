@@ -1,0 +1,202 @@
+<resources>
+
+  <style name="AppTheme.Launcher">
+    <item name="android:windowBackground">@drawable/ic_s</item>
+     <item name="colorPrimaryDark">@android:color/white</item>
+  </style>
+
+  <style name="navigateTitle" parent="Theme.AppCompat">
+    <item name="android:textAlignment">textStart</item>
+    <item name="android:textSize">18sp</item>
+    <item name="android:textColor">@color/dark_text</item>
+  </style>
+
+  <style name="dialogWrapper">
+    <item name="android:layout_margin">24dp</item>
+  </style>
+
+  <style name="tabBody">
+    <item name="android:padding">16dp</item>
+  </style>
+
+  <!--Error label text style-->
+  <style name="MyErrorText" parent="TextAppearance.AppCompat.Small">
+    <item name="android:textColor">@color/danger_text</item>
+  </style>
+
+  <!--Input field style-->
+  <style name="MyEditText" parent="Theme.AppCompat.Light">
+    <item name="colorControlNormal">@color/dark_text</item>
+    <item name="colorControlActivated">@color/description_text</item>
+  </style>
+
+  <style name="toolbar">
+    <item name="titleMarginStart">4dp</item>
+    <!--<item name="android:layout_marginBottom">4dp</item>-->
+    <item name="android:layout_height">?attr/actionBarSize</item>
+    <item name="android:layout_width">match_parent</item>
+  </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/background_dark</item>
+        <item name="colorPrimaryDark">@color/background_dark</item>
+        <item name="colorAccent">@color/background_dark</item>
+    </style>
+
+  <style name="AlertDialog" parent="Theme.AppCompat.Dialog.Alert">
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:padding">8dp</item>
+
+    <!-- Set this to true if you want Full Screen without status bar -->
+    <item name="android:windowFullscreen">false</item>
+    <item name="android:windowIsFloating">true</item>
+
+    <!-- This is important! Don't forget to set window background -->
+    <item name="android:windowBackground">@android:color/transparent</item>
+
+    <!-- Additionally if you want animations when dialog opening -->
+    <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+    <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+  </style>
+
+  <style name="FullScreenDialog" parent="Theme.AppCompat.Dialog">
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:padding">12dp</item>
+
+    <!-- Set this to true if you want Full Screen without status bar -->
+    <item name="android:windowFullscreen">false</item>
+    <item name="android:windowIsFloating">false</item>
+
+    <!-- This is important! Don't forget to set window background -->
+    <item name="android:windowBackground">@android:color/white</item>
+
+    <!-- Additionally if you want animations when dialog opening -->
+    <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+    <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+  </style>
+
+  <style name="dialogTitle">
+    <item name="layout_flexShrink">0</item>
+    <item name="android:textAlignment">center</item>
+    <item name="android:textSize">22sp</item>
+    <item name="android:padding">16dp</item>
+    <item name="android:textColor">@color/dark_text</item>
+  </style>
+
+  <style name="dialogDescription">
+    <item name="layout_flexShrink">0</item>
+    <item name="android:textAlignment">center</item>
+    <item name="android:textSize">16sp</item>
+    <item name="android:textColor">@color/dark_text</item>
+    <item name="android:paddingBottom">16dp</item>
+    <item name="android:paddingTop">8dp</item>
+  </style>
+
+
+  <style name="alertTitle">
+    <item name="layout_flexShrink">0</item>
+    <item name="android:textAlignment">textStart</item>
+    <item name="android:textSize">18sp</item>
+    <item name="android:padding">16dp</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textColor">@color/dark_text</item>
+  </style>
+
+  <style name="alertDescription">
+    <item name="layout_flexShrink">0</item>
+    <item name="android:textAlignment">textStart</item>
+    <item name="android:textColor">@color/text_light</item>
+    <item name="android:textSize">16sp</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+  </style>
+
+
+  <style name="divider">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">1dp</item>
+    <item name="android:background">@color/primary_button</item>
+    <item name="android:layout_marginLeft">52dp</item>
+  </style>
+
+  <style name="dialogPoster">
+    <item name="layout_flexShrink">2</item>
+  </style>
+
+  <style name="line">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">1dp</item>
+    <item name="android:background">@color/primary_button</item>
+  </style>
+
+  <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">false</item>
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/text_dark</item>
+    <item name="colorAccent">@color/primary_button</item>
+  </style>
+
+
+  <style name="rippleButton">
+    <item name="mrl_rippleColor">@color/ripple</item>
+    <item name="mrl_rippleBackground">@android:color/transparent</item>
+    <item name="android:padding">0dp</item>
+    <item name="mrl_rippleOverlay">true</item>
+  </style>
+
+  <style name="altContent">
+    <item name="android:textColor">@color/text_light</item>
+    <item name="android:textSize">14sp</item>
+  </style>
+
+  <style name="primaryFButton">
+    <item name="fb_iconPosition">left</item>
+    <item name="fb_defaultColor">@color/primary_button</item>
+    <item name="fb_textColor">@android:color/white</item>
+    <item name="android:textStyle">bold</item>
+    <item name="fb_textSize">14sp</item>
+    <item name="fb_textGravity">center</item>
+    <item name="fb_disabledColor">@color/disabled_color_button</item>
+    <item name="fb_disabledTextColor">@color/disabled_text_color_button</item>
+    <item name="android:textAlignment">center</item>
+    <item name="android:paddingBottom">12dp</item>
+    <item name="android:paddingTop">12dp</item>
+    <item name="android:textAllCaps">true</item>
+  </style>
+
+  <style name="input" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorControlNormal">@color/description_text</item>
+    <item name="colorControlActivated">@color/primary_button</item>
+    <!--<item name="colorControlHighlight">@color/accent</item>-->
+  </style>
+
+  <style name="secondaryFButton">
+    <item name="fb_defaultColor">@android:color/white</item>
+    <item name="fb_textColor">@color/primary_button</item>
+    <item name="fb_radius">4dp</item>
+
+    <item name="android:paddingBottom">12dp</item>
+    <item name="android:paddingTop">12dp</item>
+
+    <item name="android:textStyle">bold</item>
+    <item name="fb_textSize">14sp</item>
+    <item name="fb_textGravity">center</item>
+    <item name="fb_borderWidth">1dp</item>
+    <item name="fb_borderColor">@color/primary_button</item>
+    <item name="android:textAllCaps">true</item>
+  </style>
+
+  <style name="linkButton">
+    <item name="android:textSize">16sp</item>
+    <item name="android:padding">4dp</item>
+    <item name="android:textAlignment">center</item>
+    <item name="android:inputType">textCapSentences</item>
+    <item name="android:textColor">@color/primary_button</item>
+    <item name="android:background">@android:color/transparent</item>
+  </style>
+
+</resources>

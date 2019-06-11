@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.flexbox.FlexboxLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  app:flexDirection="column"
+  app:alignItems="flex_start"
+  android:background="@android:color/white"
+  >
+
+  <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recycler_view_quotes"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:background="@android:color/white"
+    tools:listitem="@layout/item_stock_quote"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+  />
+
+</com.google.android.flexbox.FlexboxLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.flexbox.FlexboxLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:flexDirection="column"
+        android:background="@android:color/white"
+>
+
+    <TextView
+            style="@style/alertTitle"
+            android:id="@+id/label_title"
+            android:text="@string/lorem_short"
+    />
+    <View
+            app:layout_flexShrink="1"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+    />
+    <TextView
+            style="@style/alertDescription"
+            android:id="@+id/label_description"
+            android:text="@string/lorem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+    />
+
+    <View
+            app:layout_flexShrink="1"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+    />
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="wrap_content"
+                  android:orientation="vertical" android:gravity="end">
+        <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/rippleButton">
+
+            <Button
+                    style="@style/linkButton"
+                    android:id="@+id/button_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@android:string/ok"
+            />
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+    </LinearLayout>
+
+</com.google.android.flexbox.FlexboxLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.flexbox.FlexboxLayout
+  xmlns:fancy="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  app:flexDirection="column"
+  app:justifyContent="space_between"
+  android:background="@android:color/white"
+  android:id="@+id/wrapper"
+  android:focusableInTouchMode="true"
+  android:clickable="true"
+  android:focusable="true"
+  >
+
+
+  <androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_flexShrink="3"
+    >
+
+    <com.google.android.material.appbar.AppBarLayout
+      android:id="@+id/app_bar"
+      android:fitsSystemWindows="true"
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+      android:background="@android:color/white"
+      >
+
+      <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:id="@+id/toolbar_layout"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_marginTop="56dp"
+        android:layout_height="@dimen/collapsible_htoolbar"
+        app:toolbarId="@+id/toolbar"
+        app:title="@string/sign_up"
+        app:expandedTitleTextAppearance="@style/dialogTitle"
+        app:collapsedTitleTextAppearance="@style/navigateTitle"
+        app:expandedTitleGravity="center"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+        app:contentScrim="@android:color/white"
+        android:background="@android:color/transparent"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+          android:id="@+id/toolbar"
+          android:layout_height="?attr/actionBarSize"
+          android:layout_width="match_parent"
+          app:layout_collapseMode="pin"
+          />
+
+      </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+  </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+  <com.google.android.flexbox.FlexboxLayout
+    app:layout_flexGrow="1"
+    app:layout_flexShrink="1"
+    style="@style/dialogWrapper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:flexDirection="column"
+    app:justifyContent="space_between"
+    app:alignContent="center"
+    >
+
+
+    <com.google.android.flexbox.FlexboxLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:flexDirection="column"
+      app:justifyContent="flex_start"
+      >
+
+      <Space
+        app:layout_flexShrink="2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        />
+
+      <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/auth_str_layout"
+        app:errorEnabled="true"
+        app:layout_flexShrink="0"
+        app:errorTextAppearance="@style/MyErrorText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColorHint="@color/description_text"
+        >
+
+        <ru.tradernet.presentation.views.Input
+          android:theme="@style/input"
+          android:id="@+id/input_login"
+          android:inputType="text"
+          android:imeOptions="actionDone"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/enter_your_email"
+          />
+      </com.google.android.material.textfield.TextInputLayout>
+
+
+      <Space
+        app:layout_flexShrink="2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        />
+
+
+      <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_flexShrink="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColorHint="@color/description_text"
+        >
+
+        <ru.tradernet.presentation.views.Input
+          android:theme="@style/input"
+          android:id="@+id/input_password"
+          android:imeOptions="actionDone"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/password"
+          android:inputType="textPassword"
+          />
+
+      </com.google.android.material.textfield.TextInputLayout>
+
+
+      <Space
+        app:layout_flexShrink="2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        />
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <Space
+      app:layout_flexShrink="1"
+      android:layout_width="match_parent"
+      android:layout_height="24dp"
+      />
+
+    <com.balysv.materialripple.MaterialRippleLayout
+      app:layout_flexGrow="0"
+      app:layout_flexShrink="0"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      style="@style/rippleButton"
+      >
+
+      <mehdi.sakout.fancybuttons.FancyButton
+        style="@style/primaryFButton"
+        android:id="@+id/button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        fancy:fb_text="@string/sign_up"
+        android:enabled="false"
+        />
+
+    </com.balysv.materialripple.MaterialRippleLayout>
+  </com.google.android.flexbox.FlexboxLayout>
+
+</com.google.android.flexbox.FlexboxLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                          xmlns:tools="http://schemas.android.com/tools"
+                                          xmlns:app="http://schemas.android.com/apk/res-auto"
+                                          android:layout_width="match_parent"
+                                          android:layout_height="match_parent"
+                                          app:flexDirection="column"
+                                          app:justifyContent="space_between"
+                                          style="@style/dialogWrapper"
+                                          tools:context="ru.tradernet.presentation.dialogs.ConnectionTroubleDialog"
+>
+
+    <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:justifyContent="center"
+            app:flexDirection="column"
+    >
+        <com.caverock.androidsvg.SVGImageView
+                style="@style/dialogPoster"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:svg="no_connect.svg"
+                android:contentDescription="@string/no_internet_connection"
+        />
+        <TextView
+                style="@style/dialogTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lorem_short"
+        />
+        <TextView
+                style="@style/dialogDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lorem_short"
+        />
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <com.balysv.materialripple.MaterialRippleLayout
+            app:layout_flexGrow="0"
+            app:layout_flexShrink="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/rippleButton">
+        <Button
+                android:id="@+id/connection_trouble_retry_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@android:string/cancel"
+        />
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+</com.google.android.flexbox.FlexboxLayout>
