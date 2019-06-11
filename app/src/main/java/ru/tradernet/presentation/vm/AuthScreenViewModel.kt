@@ -41,7 +41,7 @@ class AuthScreenViewModel(
 
     fun handleOnLogin() = tryIt {
         try {
-            _authState.value = appRepository.login(login, password)
+            _authState.value = appRepository.login(login.trim(), password.trim())
             navigateTo(R.id.action_home)
         } catch (e: AuthException) {
             Logger.w("AuthException ${e.message}")
